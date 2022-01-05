@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato:wght@300&family=Merriweather:ital,wght@1,300&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.white {
+    color: white;
+    opacity: 0.8;
+}
+
+.white:hover {
+    color: white;
+    opacity: 1;
+}
+
+.navbar {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: rgba(34, 34, 70);
+}
+
+.navbar .nav-link {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.logo-text {
+    font-size: 22px;
+    text-transform: uppercase;
+}
+
+#register,
+#signup,
+#login {
+    display: flex;
+    justify-content: center;
+}
+
+#signup h3 {
+    color: rgba(34, 34, 70);
+}
+
+.register-div {
+    width: 70vw;
+}
+
+.signup-div,
+.login-div {
+    width: 50vw;
+}
+
+.btn-color {
+    background-color: rgb(34, 34, 70);
+    color: white;
+}
+
+#home {
+    min-height: 100vh;
+    background: linear-gradient( rgba(34, 34, 70, 0.28), rgb(34, 34, 70)), url(img3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
+    display: flex;
+    align-items: center;
+}
+
+#home h1 {
+    font-family: 'Lato', sans-serif;
+    color: white;
+    opacity: 0.7;
+}
+
+#home p {
+    color: white;
+    font-family: 'Merriweather', serif;
+}
+
+.animation-2s {
+    animation-duration: 2s;
+}
+
+.btn-signup {
+    background-color: rgba(255, 255, 255, 0);
+    color: white;
+    border: 1px solid white;
+}
+
+.btn-signup:hover {
+    color: rgb(34, 34, 70);
+    background-color: white;
+}
+
+.btn-login,
+.btn-qr {
+    width: 30%;
+}
+
+#login h3 {
+    color: rgb(34, 34, 70);
+}
+
+.btn-color:hover {
+    color: white;
+}
+
+@media only screen and (max-width: 600px) {
+    #home {
+        min-height: 100vh;
+    }
+    .signup-div,
+    .login-div {
+        width: 70vw;
+    }
+    .btn-login,
+    .btn-qr {
+        width: 100%;
+    }
+    #register {
+        font-size: 30px;
+    }
+    form label {
+        font-size: 20px;
+    }
+}
